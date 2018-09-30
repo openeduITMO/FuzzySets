@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<LaboratoryTools xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.w3.org/1999/xhtml http://de.ifmo.ru/--schema/LaboratoryTools.xsd">
+    <ToolIndex Scheme="7777" ToolID="1">
+        <LaboratoryTool Name="Нечеткие множества" Code="JS" Width="1" Height="1" Archive="" Language="ru">
+            <Attach Src="css/dev/Lab_fuzzy_sets_style.css"></Attach>
+            <Attach Src="js/lib/Lab_fuzzy_sets_jquery.js"></Attach>
+            <Attach Src="js/dev/Lab_fuzzy_sets_vlab_1251.js"></Attach>
+        </LaboratoryTool>
+    </ToolIndex>
+</LaboratoryTools>
