@@ -75,7 +75,7 @@ public class Operations {
 
     public static BigDecimal from_linear_measure_to_linear_index(BigDecimal measure, BigDecimal elementsAmount) {
         if (elementsAmount.compareTo(BigDecimal.ZERO) > 0) {
-            return measure.divide(elementsAmount, 2);
+            return measure.divide(elementsAmount, RoundingMode.HALF_UP);
         } else {
             return BigDecimal.ZERO;
         }
