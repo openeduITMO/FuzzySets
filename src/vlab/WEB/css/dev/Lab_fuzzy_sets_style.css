@@ -147,7 +147,7 @@
 .variant_table tr th:first-child,
 .expressions_table tr td:first-child,
 .indexes_table tr td:first-child {
-    width: 35%;
+    width: 40%;
 }
 
 .variant_table th,

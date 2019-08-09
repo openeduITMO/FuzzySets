@@ -21,44 +21,48 @@ function init_lab() {
             '<tr class="variant_y"><td>Y</td></tr>' +
             '</tbody>' +
             '</table>' +
-            '<div class="expressions_title">Таблица выражений</div>' +
+            '<div class="expressions_title">Таблица результатов</div>' +
             '<table class="expressions_table">' +
             '<tbody>' +
-            '<tr class="expressions_row" data-expression="not_x_expression"><td>X\'</td></tr>' +
-            '<tr class="expressions_row" data-expression="not_y_expression"><td>Y\'</td></tr>' +
+            '<tr class="expressions_row" data-expression="not_x_expression"><td>X&#773;</td></tr>' +
+            '<tr class="expressions_row" data-expression="not_y_expression"><td>Y&#773;</td></tr>' +
             '<tr class="expressions_row" data-expression="x_or_y_expression"><td>X &#8899; Y</td></tr>' +
             '<tr class="expressions_row" data-expression="x_and_y_expression"><td>X &#8898; Y</td></tr>' +
-            '<tr class="expressions_row" data-expression="not_x_or_y_expression"><td>X\' &#8899; Y</td></tr>' +
-            '<tr class="expressions_row" data-expression="not_x_and_y_expression"><td>X\' &#8898; Y</td></tr>' +
-            '<tr class="expressions_row" data-expression="x_or_not_y_expression"><td>X &#8899; Y\'</td></tr>' +
-            '<tr class="expressions_row" data-expression="x_and_not_y_expression"><td>X &#8898; Y\'</td></tr>' +
-            '<tr class="expressions_row" data-expression="not_x_or_not_y_expression"><td>X\' &#8899; Y\'</td></tr>' +
-            '<tr class="expressions_row" data-expression="not_x_and_not_y_expression"><td>X\' &#8898; Y\'</td></tr>' +
+            '<tr class="expressions_row" data-expression="not_x_or_y_expression"><td>X&#773; &#8899; Y</td></tr>' +
+            '<tr class="expressions_row" data-expression="not_x_and_y_expression"><td>X&#773; &#8898; Y</td></tr>' +
+            '<tr class="expressions_row" data-expression="x_or_not_y_expression"><td>X &#8899; Y&#773;</td></tr>' +
+            '<tr class="expressions_row" data-expression="x_and_not_y_expression"><td>X &#8898; Y&#773;</td></tr>' +
+            '<tr class="expressions_row" data-expression="not_x_or_not_y_expression"><td>X&#773; &#8899; Y&#773;</td></tr>' +
+            '<tr class="expressions_row" data-expression="not_x_and_not_y_expression"><td>X&#773; &#8898; Y&#773;</td></tr>' +
             '<tr class="expressions_row" data-expression="x0_expression"><td>X<sub>0</sub></td></tr>' +
             '<tr class="expressions_row" data-expression="y0_expression"><td>Y<sub>0</sub></td></tr>' +
-            '<tr class="expressions_row" data-expression="linear_x_y_expression"><td>Линейное расстояние между X и Y</td></tr>' +
-            '<tr class="expressions_row" data-expression="euclid_x_y_expression"><td>Евклидово расстояние между X и Y</td></tr>' +
-            '<tr class="expressions_row" data-expression="linear_x_x0_expression"><td>Линейное расстояние между X и X<sub>0</sub></td></tr>' +
-            '<tr class="expressions_row" data-expression="linear_y_y0_expression"><td>Линейное расстояние между Y и Y<sub>0</sub></td></tr>' +
+            '<tr class="expressions_row" data-expression="linear_x_y_expression"><td>Линейное расстояние между элементами X и Y</td></tr>' +
+            '<tr class="expressions_row" data-expression="euclid_x_y_expression"><td>Евклидово расстояние между элементами X и Y</td></tr>' +
+            '<tr class="expressions_row" data-expression="linear_x_x0_expression"><td>Линейное расстояние между элементами X и X<sub>0</sub></td></tr>' +
+            '<tr class="expressions_row" data-expression="linear_y_y0_expression"><td>Линейное расстояние между элементами Y и Y<sub>0</sub></td></tr>' +
             '</tbody>' +
             '</tbody></table>' +
-            '<div class="indexes_title">Таблица индексов</div>' +
+            '<div class="indexes_title">Характеристики множеств</div>' +
             '<table class="indexes_table">' +
             '<tbody>' +
-            '<tr class="indexes_row" data-index="x_y_hemming_index"><td>Абсолютное расстояние по Хеммингу</td></tr>' +
-            '<tr class="indexes_row" data-index="x_y_euclid_index"><td>Абсолютное расстояние по Евклиду</td></tr>' +
-            '<tr class="indexes_row" data-index="x_x0_measure"><td>Линейная мера нечеткости X</td></tr>' +
-            '<tr class="indexes_row" data-index="y_y0_measure"><td>Линейная мера нечеткости Y</td></tr>' +
-            '<tr class="indexes_row" data-index="x_x0_index"><td>Линейный индекс нечеткости X</td></tr>' +
-            '<tr class="indexes_row" data-index="y_y0_index"><td>Линейный индекс нечеткости Y</td></tr>' +
+            '<tr class="indexes_row" data-index="x_y_hemming_index"><td><i>d<sup>L</sup>(X,Y)=</i></td></tr>' +
+            '<tr class="indexes_row" data-index="x_y_euclid_index"><td><i>d<sup>&#949;</sup>(X,Y)=</i></td></tr>' +
+            '<tr class="indexes_row" data-index="x_x0_measure"><td><i>D<sup>L</sup>(X)=</i></td></tr>' +
+            '<tr class="indexes_row" data-index="y_y0_measure"><td><i>D<sup>L</sup>(Y)=</td></tr>' +
+            '<tr class="indexes_row" data-index="x_x0_index"><td><i>I<sup>L</sup>(X)=</td></tr>' +
+            '<tr class="indexes_row" data-index="y_y0_index"><td><i>I<sup>L</sup>(Y)=</td></tr>' +
             '</tbody>' +
             '</table>' +
             '</div>' +
             '<div class="block_help">' +
             '<h1>Помощь по работе в виртуальной лаборатории</h1>' +
-            '<p>Необходимо ввести верные значения в ячейки таблицы. Формат ввода: десятичное число, ' +
-            'округленное до второго знака после разделителя. В качестве разделителя используйте точку.</p>' +
-            '<p>Желаем удачи в выполнении виртуальной лабораторной работы!</p>' +
+            '<p>Для заполнения щелкните мышкой по нужной ячейке и введите значение, например: 1 или 0,3. ' +
+            'Если полученное значение имеет более двух знаков после запятой, ' +
+            'то необходимо округлить его с точностью до второго знака после запятой. ' +
+            'Например, если полученное значение 1,2501, то вводим 1,25; ' +
+            'если полученное значение 1,2589, то вводим 1,26; ' +
+            'если полученное значение 1, 255, то вводим 1,26. ' +
+            'В конце нажмите кнопку «Ответ готов» в правом нижнем углу стенда.</p>' +
             '</div>' +
             '</div>';
 
@@ -125,9 +129,9 @@ function init_lab() {
         var variant_header_cell = $($.parseHTML('<th class="variant_cell"></th>')[0]);
         var variant_cell = $($.parseHTML('<td class="variant_cell"></td>')[0]);
         for (var i = 0; i < lab_variant.x_set.length; i++) {
-            $('.variant_table thead tr').append(variant_header_cell.clone().text(i + 1));
-            $('.variant_x').append(variant_cell.clone().text(lab_variant.x_set[i]));
-            $('.variant_y').append(variant_cell.clone().text(lab_variant.y_set[i]));
+            $('.variant_table thead tr').append(variant_header_cell.clone().html("<i>u<sub>" + (i + 1) + "</sub></i>"));
+            $('.variant_x').append(variant_cell.clone().text(lab_variant.x_set[i].toString().replace(".", ",")));
+            $('.variant_y').append(variant_cell.clone().text(lab_variant.y_set[i].toString().replace(".", ",")));
             $('.expressions_table tr').append(row_cell.clone().attr('index', i));
         }
         $('.indexes_table tr').append(row_cell.clone());
